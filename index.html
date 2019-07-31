@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人博客</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	
+	<body>
+
+		<div class="heard">
+			<div class="content">
+
+				<div class="tHerad clear-fix">
+
+					<div class="in_left">
+						<img src="img/logo2.jpg">
+					</div>
+
+					<div class="in_right">
+						<div class="top">
+							<p>黑客之谜</p>
+							<div class="top-bottom">
+								<ul>
+									<li>现居广州</li>
+									<li>/</li>
+									<li>22岁</li>
+									<li>/</li>
+									<li>共青团员</li>
+								</ul>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="box">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<img src="img/icon6.png">
+											<span>13242827030</span>
+										</td>
+										<td>
+											<img src="img/icon7.png">
+											<span>zhangzixiongc501@sina.com</span>
+										</td>
+										<td>
+											<img src="img/icon8.png">
+											<span>广州白云区</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="inner">
+					<div class="job">
+						<div class="div-p1">
+							<img src="img/icon1.png">
+							<span>应聘岗位和教育背景</span>
+						</div>
+						<div class="div-p2">
+							<b>应聘岗位：</b>
+							<span>Java开发工程师</span>
+						</div>
+						<div class="div-p3">
+							<b>教育背景：</b>
+							<p class="s1">2015年-2019年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校: 广东技术师范大学天河学院</p>
+
+							<p class="s2">专业：计算机科学与技术&nbsp;&nbsp;学历：本科</p>
+						</div>
+						<hr>
+					</div>
+					<div class="practice">
+						<div class="div-p1">
+							<img src="img/icon2.png">
+							<span>实习实践</span>
+						</div>
+						<div class="div-p2">
+
+							<p>曾经在广州中星信息技术服务股份有限公司实习过一个月，实习内容为Java知识培训。</p>
+							<p>曾经在老师的带领下做过图书管理系统、超市商城等系统的用户登录注册、邮箱认证、</p>
+
+							<p>通过Ajax动态获取数据并在菜单栏显示、后台管理信息的增删改查的实现。</p>
+						</div>
+						<hr>
+					</div>
+					<div class="awards">
+						<div class="div-p1">
+							<img src="img/icon3.png">
+							<span>证书和获奖</span>
+						</div>
+						<div class="div-p2">
+							<b>得奖情况：</b>
+							<p class="s1">2017年4月8日，获得第八届蓝桥杯全国软件和信息技术专业人才大赛广东赛区</p>
+							<p>Java软件开发大学B组三等奖。</p>
+							<p class="s2">在2017年6月5日至2017年6月9日参加“中星信息”校企合作Java项目实</p>
+							<p>训，荣获优秀团队奖。</p>
+						</div>
+						<hr>
+					</div>
+					<div class="skills ">
+						<div class="div-p1">
+							<img src="img/icon4.png">
+							<span>技能和爱好</span>
+						</div>
+						<div class="div-p2">
+							<b>专业技能：</b>
+							<p class="s1">C语言的基础语法、Java基础应用，SQL Server和MySQL数据库的增删改查操作、了解</p>
+							<p>Spring、Struts2、Hibernate框架，有HTML、CSS、JavaScript、Ajax基础，了解</p>
+							<p>Bootstrap框架，会Git。</p>
+						</div>
+						<div class="div-p3">
+							<b>爱&nbsp;&nbsp;好：</b>
+							<p>喜欢打代码、看直播、玩LOL、听着音乐看书。</p>
+						</div>
+						<hr>
+					</div>
+					<div class="self-Evaluation">
+
+					</div>
+
+
+				</div>
+			</div>
+			<div id="mydiv" style="height:1100px;"></div>
+		</div>
+
+		<!-- 背景div -->
+		
+		<script type="text/javascript">
+			window.onload = function() {
+				//配置
+				var config = {
+					vx: 4, //小球x轴速度,正为右，负为左
+					vy: 4, //小球y轴速度
+					height: 2, //小球高宽，其实为正方形，所以不宜太大
+					width: 2,
+					count: 200, //点个数
+					color: "47, 135, 193", //点颜色
+					stroke: "108,166,205", //线条颜色
+					dist: 6000, //点吸附距离
+					e_dist: 20000, //鼠标吸附加速距离
+					max_conn: 10 //点到点最大连接数
+				}
+
+				//调用
+				CanvasParticle(config);
+			}
+		</script>
+		<script type="text/javascript" src="js/canvas-particle.js"></script>
+	</body>
+</html>
